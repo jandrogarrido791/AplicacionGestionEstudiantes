@@ -5,7 +5,7 @@
  * ya que una variable de tipo Producto puede almacenar
  * objetos de diferentes clases derivadas.
  */
-public class Principal {
+public class PrincipalInventario {
 
     public static void main(String[] args) {
 
@@ -54,17 +54,13 @@ public class Principal {
 
             System.out.println("\n--------------------------------------");
 
-            // Método común de la clase Producto
             producto.mostrarInformacion();
 
-            // Método abstracto implementado de manera diferente
-            // por cada clase derivada.
             producto.mostrarTipoProducto();
         }
 
         System.out.println("\n========== PRUEBA DE DESCUENTOS ==========");
 
-        // Se demuestra el uso de la interfaz Descontable
         Descontable electronico = new Electronico(
                 4,
                 "Monitor",
